@@ -19,6 +19,7 @@ return new class extends Migration
             $table->double('amount')->defult(0.0);
             $table->decimal('fee')->default(0.0);
             $table->date('date');
+            $table->timestamps();
         });
     }
 

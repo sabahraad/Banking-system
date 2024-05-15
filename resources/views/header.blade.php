@@ -64,10 +64,10 @@
 					<li class="nav-item dropdown has-arrow main-drop">
 						<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
 							<span class="status online"></span></span>
-							<span>Name</span>
+							<span>{{Auth::user()->name}}</span>
 						</a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="#">Logout</a>
+							<a class="dropdown-item" href="{{route('logout')}}">Logout</a>
 						</div>
 					</li>
 				</ul>
@@ -77,7 +77,7 @@
 				<div class="dropdown mobile-user-menu">
 					<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></a>
 					<div class="dropdown-menu dropdown-menu-right">
-						<a class="dropdown-item" href="#">Logout</a>
+						<a class="dropdown-item" href="{{route('logout')}}">Logout</a>
 					</div>
 				</div>
 				<!-- /Mobile Menu -->
